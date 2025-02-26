@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title> это демонстрация работы с API</title>
+  </head>
+    <body>
+
+      <form action="" method="get" id="registration-form">
+        
+        <div id="input-wraper" class="input-wraper">
+          <label for="user-name" name="user-name" >Name&nbsp:</label>
+          <input type="text" id="user-name" class="user-password" pattern="[A-Za-zА-Яа-яЁё\s]+" title="Введите текст только на кириллице" minlength="6" autofocus required>
+          <br>
+          <label for="user-age" name="user-age" >Age&nbsp&nbsp&nbsp&nbsp:</label>
+          <input type="text" id="user-age" class="user-password" minlength="1" >
+          <br>
+
+          <label for="user-email" name="user-email" >Email&nbsp:</label>
+          <input type="email" id="user-email" class="user-password" minlength="6" >
+
+          <br>
+
+        </div>
+        <div class="user-help" id="user-help" >insert your data</div>
+
+        <button type="button" id="button-add" class="button-send">Add new information</button>
+        <br>
+
+        <button type="submit" id="button-send" class="button-send" >send</button>
+
+        <div id="output"></div>
+      </form>
+
+
+
+    </div>
+    <script src="./Js/script.js"></script>
+    </body>
+</html>
+
